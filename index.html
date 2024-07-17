@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  </head>
+  <body ng-app="restaurant" ng-strict-di>
+
+    <!-- Fixed position loading indicator -->
+    <loading class="loading-indicator"></loading>
+   <body>
+
+    <header>
+        <!-- Navigation Bar -->
+        <nav id="header-nav" class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              
+                <a href="index.html" class="pull-left visible-md visible-lg"> 
+                  <img src="./assets/restaurant-logo.png">
+                  
+                  <div class="navbar-brand">
+                    <a href="index.html"><h3>David Chu's China Bistro</h3></a>
+                    <p>
+                
+                
+                      <img src="./assets/star-k-logo.png.png" alt="Kosher certification">
+                      <span>Kosher Certified</span>
+                    </p>
+                  </div>
+                  <div class="dropdown">
+
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" 
+          data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+            </div>
+     
+            </div> <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul id="nav-list" class="nav navbar-nav navbar-right">
+                 <li id="navHomeButton" class="visible-xs active">
+                   <a href="index.html">
+                     <span class="glyphicon glyphicon-home"aria-hidden="true"></span> Home</a>
+                 </li>
+                <li id="navMenuButton">
+                  <a href="menu.html" onclick="$dc.loadMenuCategories();">
+                    <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+                </li>
+                <li>
+                  <a href="#About">
+                    <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+                </li>
+                <li id="phone" class="hidden-xs">
+                  <a href="tel:410-602-5008">
+                    <span>410-602-5008</span></a><div>* We Deliver</div>
+                    
+                </li>
+                
+              </ul><!-- #nav-list -->
+            </div><!-- .collapse .navbar-collapse -->
+          </div><!-- .container -->
+
+        </nav><!-- #header-nav-->
+        <div id="call-btn" class="visible-xs">
+            <a class="btn" href="tel:410-602-5008">
+            <span class="glyphicon glyphicon-earphone"></span>
+            410-602-5008
+            </a>
+          </div>
+          
+         
+                  </div>
+                </div>
+                <hr class="visible-xs">
+              </div>         
+          <div id="call-btn" class="visible-xs">
+            <a class="btn" href="tel:410-602-5008">
+            <span class="glyphicon glyphicon-earphone"></span>
+            410-602-5008
+            </a>
+          </div>
+          <div >
+
+          </div>
+          <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+        
+          <div id="main-content" class="container"></div>
+          
+          
+            </a>
+          </div>
+        </body>
+          <footer class="panel-footer">
+            <div class="container">
+              <div class="row">
+                <section id="hours" class="col-sm-4">
+                  <span>Hours:</span><br>
+                  Sun-Thurs: 11:15am - 10:00pm<br>
+                  Fri: 11:15am - 2:30pm<br>
+                  Saturday Closed
+                  <hr class="visible-xs">
+                <section id="address" class="col-sm-4">
+                  <span>Address:</span><br>
+                  7105 Reisterstown Road<br>
+                  Baltimore, MD 21215
+                  <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+                  <hr class="visible-xs">
+                </section>
+                <section id="testimonials" class="col-sm-4">
+                  <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+                  <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+                </section>
+              </div>
+              <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+            </div>
+          </footer>
+          
+
+
+    
+        <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+        </html>
+</section>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/script/ajax-utils.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/script.js"></script>
+
+</body>
+</html>
